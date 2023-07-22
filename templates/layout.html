@@ -1,0 +1,16 @@
+<html lang="en">
+  <head>
+    {% if title %}
+    <title>Flask blog - {{ title }}</title>
+    {% else %}
+    <title>Flask Blog</title>
+    {% endif %}
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Page</title>
+  </head>
+  <body>
+    {% block content %}{% endblock %}
+
+  </body>
+</html>
